@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <title>latihan 2</title>
+</head>
+<body>
+    <div id="app">
+        <p> {{greet('Resi Maulana Zein')}} </p>
+    </div>
+
+    <script>
+        var app = new Vue ({
+            el : "#app",
+            methods: {
+                greet: function (name) {
+                    return 'Good Morning ' + name;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

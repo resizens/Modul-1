@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <title>latihan 9</title>
+</head>
+<body>
+    <div id="app">
+        <h3>Output dengan Computed Propery</h3>
+        <p> {{getRandom}} </p>
+        <p> {{getRandom}} </p>
+        <p> {{getRandom}} </p>
+
+        <h3>Output dengan Method</h3>
+        <p> {{getAcak()}} </p>
+        <p> {{getAcak()}} </p>
+        <p> {{getAcak()}} </p>
+    </div>
+
+    <script>
+        var app = new Vue ({
+            el : "#app",
+            computed : {
+                getRandom : function () {
+                    return Math.random();
+                }
+            },
+            methods : {
+                getAcak : function () {
+                    return Math.random();
+                }
+            }
+        })
+    </script>
+</body>
+</html>

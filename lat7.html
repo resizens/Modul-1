@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <title>latihan 7</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="pesan">Tampil Pesan</button>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el : "#app",
+            methods: {
+                pesan : function () {
+                    alert("Selamat belajar Vue.js")
+                }
+            }
+        })
+    </script>
+</body>
+</html>

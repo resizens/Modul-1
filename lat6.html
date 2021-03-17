@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <title>latihan 6</title>
+</head>
+<body>
+    <div id="app">
+        <ol>
+            <li v-for="(k, index) in kelas" key="index"> Item ke-{{index}}, {{k}}</li>
+        </ol>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el : "#app",
+            data : {
+                kelas : ["XRPL1", "XRPL2", "XIRPL1", "XIRPL2", "XIIRPL1", "XIIRPL2"]
+            }
+        })
+    </script>
+</body>
+</html>

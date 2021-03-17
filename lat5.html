@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <title>latihan 5</title>
+</head>
+<body>
+    <div id="app">
+        <p v-if="ItemInStock > 10"> {{ItemInStock}} in stock!</p>
+        <p v-else-if="ItemInStock > 0"> Hurry up, only {{ItemInStock}} item left</p>
+        <p v-else>Sorry, we are all out!</p>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el : "#app",
+            data : {
+                ItemInStock : 10
+            }
+        })
+    </script>
+</body>
+</html>
